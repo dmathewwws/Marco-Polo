@@ -53,6 +53,9 @@
 		AFAD80EF16FE539A008D2A8A /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */; };
 		AFAD80F016FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */; };
 		AFAD80F316FE64CB008D2A8A /* MarcoConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */; };
+		AFAD80F716FE93A2008D2A8A /* PostJobController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80F616FE93A2008D2A8A /* PostJobController.m */; };
+		AFAD80FC16FE97B6008D2A8A /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80F916FE97B5008D2A8A /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AFAD80FD16FE97B6008D2A8A /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80FB16FE97B5008D2A8A /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +121,12 @@
 		AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
 		AFAD80F116FE64CB008D2A8A /* MarcoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarcoConstants.h; sourceTree = "<group>"; };
 		AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarcoConstants.m; sourceTree = "<group>"; };
+		AFAD80F516FE93A2008D2A8A /* PostJobController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostJobController.h; sourceTree = "<group>"; };
+		AFAD80F616FE93A2008D2A8A /* PostJobController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostJobController.m; sourceTree = "<group>"; };
+		AFAD80F816FE97B5008D2A8A /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		AFAD80F916FE97B5008D2A8A /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		AFAD80FA16FE97B5008D2A8A /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		AFAD80FB16FE97B5008D2A8A /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +217,7 @@
 		AFAD80C516FE1F68008D2A8A /* Marco Polo */ = {
 			isa = PBXGroup;
 			children = (
+				AFAD80FE16FE97C1008D2A8A /* ActionPicker */,
 				AFAD80F416FE7A8C008D2A8A /* UIImage */,
 				AFAD80D716FE1F68008D2A8A /* MainStoryboard.storyboard */,
 				AFAD80CE16FE1F68008D2A8A /* AppDelegate.h */,
@@ -230,6 +240,8 @@
 				2AB2703316FEADE500E0E94E /* Singleton.m */,
 				2AB2703516FEB2CF00E0E94E /* ApplyForJobViewController.h */,
 				2AB2703616FEB2CF00E0E94E /* ApplyForJobViewController.m */,
+				AFAD80F516FE93A2008D2A8A /* PostJobController.h */,
+				AFAD80F616FE93A2008D2A8A /* PostJobController.m */,
 				2AB2701B16FE4C9700E0E94E /* Images */,
 				AFAD80C616FE1F68008D2A8A /* Supporting Files */,
 			);
@@ -261,6 +273,17 @@
 				AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */,
 			);
 			name = UIImage;
+			sourceTree = "<group>";
+		};
+		AFAD80FE16FE97C1008D2A8A /* ActionPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AFAD80F816FE97B5008D2A8A /* AbstractActionSheetPicker.h */,
+				AFAD80F916FE97B5008D2A8A /* AbstractActionSheetPicker.m */,
+				AFAD80FA16FE97B5008D2A8A /* ActionSheetStringPicker.h */,
+				AFAD80FB16FE97B5008D2A8A /* ActionSheetStringPicker.m */,
+			);
+			name = ActionPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +377,9 @@
 				2AB2703116FE9ADA00E0E94E /* PickJobForSendingViewController.m in Sources */,
 				2AB2703416FEADE500E0E94E /* Singleton.m in Sources */,
 				2AB2703716FEB2CF00E0E94E /* ApplyForJobViewController.m in Sources */,
+				AFAD80F716FE93A2008D2A8A /* PostJobController.m in Sources */,
+				AFAD80FC16FE97B6008D2A8A /* AbstractActionSheetPicker.m in Sources */,
+				AFAD80FD16FE97B6008D2A8A /* ActionSheetStringPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
