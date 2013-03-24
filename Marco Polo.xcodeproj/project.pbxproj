@@ -40,6 +40,12 @@
 		AFAD80D616FE1F68008D2A8A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFAD80D516FE1F68008D2A8A /* Default-568h@2x.png */; };
 		AFAD80D916FE1F68008D2A8A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAD80D716FE1F68008D2A8A /* MainStoryboard.storyboard */; };
 		AFAD80DC16FE1F68008D2A8A /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80DB16FE1F68008D2A8A /* InitialViewController.m */; };
+		AFAD80E416FE3CBA008D2A8A /* CreateAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80E316FE3CBA008D2A8A /* CreateAccount.m */; };
+		AFAD80E716FE3D45008D2A8A /* CreateAccountCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80E616FE3D45008D2A8A /* CreateAccountCompany.m */; };
+		AFAD80EE16FE539A008D2A8A /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80E916FE5399008D2A8A /* UIImage+AlphaAdditions.m */; };
+		AFAD80EF16FE539A008D2A8A /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */; };
+		AFAD80F016FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */; };
+		AFAD80F316FE64CB008D2A8A /* MarcoConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +89,18 @@
 		AFAD80D816FE1F68008D2A8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AFAD80DA16FE1F68008D2A8A /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		AFAD80DB16FE1F68008D2A8A /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		AFAD80E216FE3CBA008D2A8A /* CreateAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccount.h; sourceTree = "<group>"; };
+		AFAD80E316FE3CBA008D2A8A /* CreateAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccount.m; sourceTree = "<group>"; };
+		AFAD80E516FE3D45008D2A8A /* CreateAccountCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountCompany.h; sourceTree = "<group>"; };
+		AFAD80E616FE3D45008D2A8A /* CreateAccountCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountCompany.m; sourceTree = "<group>"; };
+		AFAD80E816FE5399008D2A8A /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		AFAD80E916FE5399008D2A8A /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		AFAD80EA16FE5399008D2A8A /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		AFAD80EC16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		AFAD80F116FE64CB008D2A8A /* MarcoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarcoConstants.h; sourceTree = "<group>"; };
+		AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarcoConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +187,10 @@
 		AFAD80C516FE1F68008D2A8A /* Marco Polo */ = {
 			isa = PBXGroup;
 			children = (
+				AFAD80F416FE7A8C008D2A8A /* UIImage */,
+				AFAD80D716FE1F68008D2A8A /* MainStoryboard.storyboard */,
 				AFAD80CE16FE1F68008D2A8A /* AppDelegate.h */,
 				AFAD80CF16FE1F68008D2A8A /* AppDelegate.m */,
-				AFAD80D716FE1F68008D2A8A /* MainStoryboard.storyboard */,
 				2AB2701816FE448100E0E94E /* CompanyDashboardViewController.h */,
 				2AB2701916FE448100E0E94E /* CompanyDashboardViewController.m */,
 				AFAD80DA16FE1F68008D2A8A /* InitialViewController.h */,
@@ -179,6 +198,12 @@
 				2AB2702016FE4FF200E0E94E /* BloggerDashboardViewController.h */,
 				2AB2702116FE4FF200E0E94E /* BloggerDashboardViewController.m */,
 				2AB2701B16FE4C9700E0E94E /* Images */,
+				AFAD80E216FE3CBA008D2A8A /* CreateAccount.h */,
+				AFAD80E316FE3CBA008D2A8A /* CreateAccount.m */,
+				AFAD80E516FE3D45008D2A8A /* CreateAccountCompany.h */,
+				AFAD80E616FE3D45008D2A8A /* CreateAccountCompany.m */,
+				AFAD80F116FE64CB008D2A8A /* MarcoConstants.h */,
+				AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */,
 				AFAD80C616FE1F68008D2A8A /* Supporting Files */,
 			);
 			path = "Marco Polo";
@@ -196,6 +221,19 @@
 				AFAD80D516FE1F68008D2A8A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFAD80F416FE7A8C008D2A8A /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				AFAD80EC16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.h */,
+				AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */,
+				AFAD80E816FE5399008D2A8A /* UIImage+AlphaAdditions.h */,
+				AFAD80E916FE5399008D2A8A /* UIImage+AlphaAdditions.m */,
+				AFAD80EA16FE5399008D2A8A /* UIImage+ResizeAdditions.h */,
+				AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +314,12 @@
 				AFAD80DC16FE1F68008D2A8A /* InitialViewController.m in Sources */,
 				2AB2701A16FE448100E0E94E /* CompanyDashboardViewController.m in Sources */,
 				2AB2702216FE4FF200E0E94E /* BloggerDashboardViewController.m in Sources */,
+				AFAD80E416FE3CBA008D2A8A /* CreateAccount.m in Sources */,
+				AFAD80E716FE3D45008D2A8A /* CreateAccountCompany.m in Sources */,
+				AFAD80EE16FE539A008D2A8A /* UIImage+AlphaAdditions.m in Sources */,
+				AFAD80EF16FE539A008D2A8A /* UIImage+ResizeAdditions.m in Sources */,
+				AFAD80F016FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m in Sources */,
+				AFAD80F316FE64CB008D2A8A /* MarcoConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

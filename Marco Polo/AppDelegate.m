@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
+#define TWITTER_CONSUMER_KEY @"UIAfybEfWxztdG1B5umDw"
+#define TWITTER_CONSUMER_SECRET @"qfOJGcw68Axenc1MVP9XM0xGqB33QO5OmYnBjvEAeYk"
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,8 +20,10 @@
     // Override point for customization after application launch.
     
     // Set up parse app
-    [Parse setApplicationId:@"bScVDoUbjJCRCNbCKcXyOpHPraaDwXGY7bX70vmY"
-                  clientKey:@"5ffQaGKfvMvvt61MkVJKbK0ma0koezC84mbnEDIN"];
+    [Parse setApplicationId:@"jV5g4FDEV64zDFJcB14tT9EV0pn4jJyxgSSdk7G8"
+                  clientKey:@"3T4S1HeovC8CmOHzV16VXaaVrOjdhlqKNqvihTca"];
+    
+    [PFTwitterUtils initializeWithConsumerKey:TWITTER_CONSUMER_KEY consumerSecret:TWITTER_CONSUMER_SECRET];
 
     return YES;
 }
