@@ -12,6 +12,7 @@
 @interface PostJobController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *submitJobButton;
+@property (weak, nonatomic) IBOutlet UITextView *jobDescriptionTextView;
 
 @end
 
@@ -68,7 +69,7 @@
     _dollarsPerWeek.delegate = self;
     _category.delegate = self;
     
-    self.categories = [NSArray arrayWithObjects:@"Automative", @"Technology", @"Fashion", nil];
+    self.categories = [NSArray arrayWithObjects:@"Automotive", @"Technology", @"Fashion", nil];
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)]];
 
@@ -87,6 +88,7 @@
     [self setDollarsPerWeek:nil];
     [self setCategory:nil];
     [self setSubmitJobButton:nil];
+    [self setJobDescriptionTextView:nil];
     [super viewDidUnload];
 }
 
@@ -125,6 +127,7 @@
     [_durationPerWeek resignFirstResponder];
     [_dollarsPerWeek resignFirstResponder];
     [_category resignFirstResponder];
+    [self.jobDescriptionTextView resignFirstResponder];
 }
 
 - (IBAction)pickCategory:(id)sender {
@@ -141,6 +144,13 @@
     [_category resignFirstResponder];
 }
 
+- (void)actionPickerCancelled:(id)parm
+{
+    NSLog(@"Action picker cancelled");
+    [self dismissKeyboard:nil];
+}
+
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];
@@ -149,14 +159,15 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     
-    [self animateTextField:textField up:YES];
+//    [self animateTextField:textField up:YES];
     
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    [self animateTextField:textField up:NO];
+//    [self animateTextField:textField up:NO];
     
 }
+
 
 -(void)animateTextField:(id)textField up:(BOOL)up
 {

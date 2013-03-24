@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *jobCategoryTextField;
 @property (nonatomic, strong) NSArray *categories;
 @property (nonatomic) NSInteger selectedIndex;
+@property (nonatomic) BOOL selected;
 
 @end
 
@@ -48,6 +49,8 @@
     self.companyDashboardTableView.dataSource = self;
     self.jobCategoryTextField.delegate = self;
 
+    self.selected = NO;
+
     UIFont *font = [UIFont boldSystemFontOfSize:12.0f];
     NSDictionary *attributes = [NSDictionary dictionaryWithObject:font
                                                            forKey:UITextAttributeFont];
@@ -64,7 +67,7 @@
     frame= self.tipsToolsSegmentedControl.frame;
     [self.tipsToolsSegmentedControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 22.0f)];
 
-    self.categories = [NSArray arrayWithObjects:@"Automative", @"Technology", @"Fashion", nil];
+    self.categories = [NSArray arrayWithObjects:@"Automotive", @"Technology", @"Fashion", nil];
 }
 
 
@@ -92,7 +95,14 @@
  numberOfRowsInSection:(NSInteger)section
 {
     NSLog(@"In numberOfRowsInSection, for section %d", section);
-    return 2;
+    if (self.selected)
+    {
+        return 2;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 
@@ -153,6 +163,20 @@
     
     //may have originated from textField or barButtonItem, use an IBOutlet instead of element
     self.jobCategoryTextField.text = [self.categories objectAtIndex:self.selectedIndex];
+    [self.jobCategoryTextField resignFirstResponder];
+
+    if ([self.jobCategoryTextField.text isEqualToString:@"Automotive"])
+    {
+        self.selected = YES;
+    }
+    
+    [self.companyDashboardTableView reloadData];
+}
+
+
+- (void)actionPickerCancelled:(id)parm
+{
+    NSLog(@"Action picker cancelled");
     [self.jobCategoryTextField resignFirstResponder];
 }
 

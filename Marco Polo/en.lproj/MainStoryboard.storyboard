@@ -133,6 +133,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="aLc-Km-enx"/>
                     <connections>
+                        <outlet property="aboutMe" destination="bo6-9w-El5" id="6JW-dA-sAC"/>
                         <outlet property="avatarImage" destination="L1x-tJ-5gZ" id="Cu8-k1-2rL"/>
                         <outlet property="blogLink" destination="o78-VB-fnz" id="gJL-o0-777"/>
                         <outlet property="category" destination="Bfw-0M-fiU" id="tFW-Ye-vCy"/>
@@ -268,6 +269,7 @@
                         <outlet property="category" destination="c0V-5c-ccP" id="LgP-2A-1Jr"/>
                         <outlet property="dollarsPerWeek" destination="Gd6-Xq-0CM" id="Rhw-yo-jJY"/>
                         <outlet property="durationPerWeek" destination="j7i-Id-egS" id="zmL-WH-PcF"/>
+                        <outlet property="jobDescriptionTextView" destination="B0A-gO-G84" id="8zT-ce-MH2"/>
                         <outlet property="submitJobButton" destination="NFt-Ja-mfu" id="bRm-yM-HOp"/>
                     </connections>
                 </viewController>
@@ -370,6 +372,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="Hdf-IE-jqd"/>
                     <connections>
+                        <outlet property="aboutMe" destination="9m5-Kc-GMo" id="LaF-ff-fas"/>
                         <outlet property="avatarImage" destination="ed1-Cm-O6O" id="LeR-hF-xph"/>
                         <outlet property="blogLink" destination="5wD-tb-4Yq" id="GbW-3a-sYu"/>
                         <outlet property="category" destination="mn0-d1-A7q" id="p4D-fy-U4X"/>
@@ -558,11 +561,14 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="#automotive" borderStyle="roundedRect" minimumFontSize="17" id="84K-ne-Gge">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="84K-ne-Gge">
                                 <rect key="frame" x="116" y="63" width="198" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pickCategory:" destination="fXg-G8-HHH" eventType="editingDidBegin" id="UtT-jz-hMe"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Job Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vtE-bQ-GLz">
                                 <rect key="frame" x="6" y="67" width="102" height="21"/>

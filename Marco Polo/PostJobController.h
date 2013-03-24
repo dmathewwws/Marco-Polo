@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ActionSheetStringPicker.h"
 
-@interface PostJobController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate>
+@interface PostJobController : UIViewController <UITextFieldDelegate, UIActionSheetDelegate, UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *blogsPerWeek;
 @property (strong, nonatomic) IBOutlet UITextField *durationPerWeek;
