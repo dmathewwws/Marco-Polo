@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "ActionSheetStringPicker.h"
 
 @interface CreateAccountCompany : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
@@ -22,6 +23,10 @@
 @property (strong, nonatomic) IBOutlet UITextField *category;
 @property (strong, nonatomic) IBOutlet UITextField *aboutMe;
 @property (strong, nonatomic) UIImagePickerController *picker;
+@property (nonatomic, strong) NSArray *categories;
+@property (nonatomic) NSInteger selectedIndex;
+
+@property (strong, nonatomic) ActionSheetStringPicker *stringPicker;
 
 @property (strong, nonatomic) PFFile *userSmallAvatar;
 
