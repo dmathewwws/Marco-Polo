@@ -310,9 +310,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFAD80BB16FE1F68008D2A8A /* Marco Polo */ = {
+		AFAD80BB16FE1F68008D2A8A /* Marco Polo User */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFAD80DF16FE1F68008D2A8A /* Build configuration list for PBXNativeTarget "Marco Polo" */;
+			buildConfigurationList = AFAD80DF16FE1F68008D2A8A /* Build configuration list for PBXNativeTarget "Marco Polo User" */;
 			buildPhases = (
 				AFAD80B816FE1F68008D2A8A /* Sources */,
 				AFAD80B916FE1F68008D2A8A /* Frameworks */,
@@ -322,7 +322,7 @@
 			);
 			dependencies = (
 			);
-			name = "Marco Polo";
+			name = "Marco Polo User";
 			productName = "Marco Polo";
 			productReference = AFAD80BC16FE1F68008D2A8A /* Marco Polo.app */;
 			productType = "com.apple.product-type.application";
@@ -348,7 +348,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFAD80BB16FE1F68008D2A8A /* Marco Polo */,
+				AFAD80BB16FE1F68008D2A8A /* Marco Polo User */,
 			);
 		};
 /* End PBXProject section */
@@ -533,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFAD80DF16FE1F68008D2A8A /* Build configuration list for PBXNativeTarget "Marco Polo" */ = {
+		AFAD80DF16FE1F68008D2A8A /* Build configuration list for PBXNativeTarget "Marco Polo User" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFAD80E016FE1F68008D2A8A /* Debug */,
