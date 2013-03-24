@@ -22,7 +22,7 @@
     
     PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+    [testObject saveInBackground];
     NSLog(@"Testing");
 }
 
