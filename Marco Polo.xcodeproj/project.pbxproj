@@ -29,6 +29,13 @@
 		2AB2702A16FE5D2800E0E94E /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702916FE5D2800E0E94E /* face2.png */; };
 		2AB2702D16FE74B000E0E94E /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702B16FE74B000E0E94E /* button-highlighted.png */; };
 		2AB2702E16FE74B000E0E94E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702C16FE74B000E0E94E /* button.png */; };
+		2AB2703116FE9ADA00E0E94E /* PickJobForSendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2703016FE9ADA00E0E94E /* PickJobForSendingViewController.m */; };
+		2AB2703416FEADE500E0E94E /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2703316FEADE500E0E94E /* Singleton.m */; };
+		2AB2703716FEB2CF00E0E94E /* ApplyForJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2703616FEB2CF00E0E94E /* ApplyForJobViewController.m */; };
+		2AB2703A16FEB5FB00E0E94E /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2703816FEB5FB00E0E94E /* facebook.png */; };
+		2AB2703B16FEB5FB00E0E94E /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2703916FEB5FB00E0E94E /* twitter.png */; };
+		2AB2703D16FEB69600E0E94E /* default_profile_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2703C16FEB69600E0E94E /* default_profile_image.png */; };
+		2AB2703F16FEB8C000E0E94E /* button-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2703E16FEB8C000E0E94E /* button-red.png */; };
 		AFAD80C016FE1F68008D2A8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80BF16FE1F68008D2A8A /* UIKit.framework */; };
 		AFAD80C216FE1F68008D2A8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80C116FE1F68008D2A8A /* Foundation.framework */; };
 		AFAD80C416FE1F68008D2A8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80C316FE1F68008D2A8A /* CoreGraphics.framework */; };
@@ -73,6 +80,16 @@
 		2AB2702916FE5D2800E0E94E /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
 		2AB2702B16FE74B000E0E94E /* button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-highlighted.png"; sourceTree = "<group>"; };
 		2AB2702C16FE74B000E0E94E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		2AB2702F16FE9ADA00E0E94E /* PickJobForSendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickJobForSendingViewController.h; sourceTree = "<group>"; };
+		2AB2703016FE9ADA00E0E94E /* PickJobForSendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickJobForSendingViewController.m; sourceTree = "<group>"; };
+		2AB2703216FEADE500E0E94E /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		2AB2703316FEADE500E0E94E /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		2AB2703516FEB2CF00E0E94E /* ApplyForJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyForJobViewController.h; sourceTree = "<group>"; };
+		2AB2703616FEB2CF00E0E94E /* ApplyForJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyForJobViewController.m; sourceTree = "<group>"; };
+		2AB2703816FEB5FB00E0E94E /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		2AB2703916FEB5FB00E0E94E /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		2AB2703C16FEB69600E0E94E /* default_profile_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_profile_image.png; sourceTree = "<group>"; };
+		2AB2703E16FEB8C000E0E94E /* button-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-red.png"; sourceTree = "<group>"; };
 		AFAD80BC16FE1F68008D2A8A /* Marco Polo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marco Polo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAD80BF16FE1F68008D2A8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFAD80C116FE1F68008D2A8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +157,10 @@
 				2AB2701E16FE4FB600E0E94E /* mini-logo.png */,
 				2AB2702B16FE74B000E0E94E /* button-highlighted.png */,
 				2AB2702C16FE74B000E0E94E /* button.png */,
+				2AB2703E16FEB8C000E0E94E /* button-red.png */,
+				2AB2703816FEB5FB00E0E94E /* facebook.png */,
+				2AB2703916FEB5FB00E0E94E /* twitter.png */,
+				2AB2703C16FEB69600E0E94E /* default_profile_image.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -201,8 +222,14 @@
 				AFAD80E316FE3CBA008D2A8A /* CreateAccount.m */,
 				AFAD80E516FE3D45008D2A8A /* CreateAccountCompany.h */,
 				AFAD80E616FE3D45008D2A8A /* CreateAccountCompany.m */,
+				2AB2702F16FE9ADA00E0E94E /* PickJobForSendingViewController.h */,
+				2AB2703016FE9ADA00E0E94E /* PickJobForSendingViewController.m */,
 				AFAD80F116FE64CB008D2A8A /* MarcoConstants.h */,
 				AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */,
+				2AB2703216FEADE500E0E94E /* Singleton.h */,
+				2AB2703316FEADE500E0E94E /* Singleton.m */,
+				2AB2703516FEB2CF00E0E94E /* ApplyForJobViewController.h */,
+				2AB2703616FEB2CF00E0E94E /* ApplyForJobViewController.m */,
 				2AB2701B16FE4C9700E0E94E /* Images */,
 				AFAD80C616FE1F68008D2A8A /* Supporting Files */,
 			);
@@ -299,6 +326,10 @@
 				2AB2702A16FE5D2800E0E94E /* face2.png in Resources */,
 				2AB2702D16FE74B000E0E94E /* button-highlighted.png in Resources */,
 				2AB2702E16FE74B000E0E94E /* button.png in Resources */,
+				2AB2703A16FEB5FB00E0E94E /* facebook.png in Resources */,
+				2AB2703B16FEB5FB00E0E94E /* twitter.png in Resources */,
+				2AB2703D16FEB69600E0E94E /* default_profile_image.png in Resources */,
+				2AB2703F16FEB8C000E0E94E /* button-red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +351,9 @@
 				AFAD80EF16FE539A008D2A8A /* UIImage+ResizeAdditions.m in Sources */,
 				AFAD80F016FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m in Sources */,
 				AFAD80F316FE64CB008D2A8A /* MarcoConstants.m in Sources */,
+				2AB2703116FE9ADA00E0E94E /* PickJobForSendingViewController.m in Sources */,
+				2AB2703416FEADE500E0E94E /* Singleton.m in Sources */,
+				2AB2703716FEB2CF00E0E94E /* ApplyForJobViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

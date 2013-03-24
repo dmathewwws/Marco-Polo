@@ -7,10 +7,14 @@
 //
 
 #import "BloggerDashboardViewController.h"
+#import "Singleton.h"
+
 
 @interface BloggerDashboardViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *bloggerDashboardTableView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *tipsToolsSegmentedControl;
 
 @end
 
@@ -32,9 +36,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+
+    [Singleton sharedInstance].myDashboardViewController = self;
     
     self.bloggerDashboardTableView.delegate = self;
     self.bloggerDashboardTableView.dataSource = self;
+
+    UIFont *font = [UIFont boldSystemFontOfSize:12.0f];
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject:font
+                                                           forKey:UITextAttributeFont];
+    [self.segmentedControl setTitleTextAttributes:attributes
+                                         forState:UIControlStateNormal];
+    [self.tipsToolsSegmentedControl setTitleTextAttributes:attributes
+                                                  forState:UIControlStateNormal];
+    CGRect frame= self.segmentedControl.frame;
+    [self.segmentedControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 22.0f)];
+    frame= self.tipsToolsSegmentedControl.frame;
+    [self.tipsToolsSegmentedControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 22.0f)];
 }
 
 
@@ -42,6 +60,8 @@
 {
     [self setBloggerDashboardTableView:nil];
     [self setBloggerDashboardTableView:nil];
+    [self setSegmentedControl:nil];
+    [self setTipsToolsSegmentedControl:nil];
     [super viewDidUnload];
 }
 

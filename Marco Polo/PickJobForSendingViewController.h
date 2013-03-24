@@ -1,5 +1,5 @@
 //
-//  CompanyDashboardViewController.h
+//  PickJobForSendingViewController.h
 //  Marco Polo
 //
 //  Created by Roland on 2013-03-23.
@@ -10,6 +10,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CompanyDashboardViewController : UIViewController
+@interface PickJobForSendingViewController : UIViewController
 
 @end
