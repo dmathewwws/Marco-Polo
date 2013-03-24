@@ -50,7 +50,7 @@
     _category.delegate = self;
     _aboutMe.delegate = self;
     
-    self.categories = [NSArray arrayWithObjects:@"Automative", @"Technology", @"Fashion", nil];
+    self.categories = [NSArray arrayWithObjects:@"Automotive", @"Technology", @"Fashion", nil];
 
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)]];

@@ -50,7 +50,7 @@
     _category.delegate = self;
     _aboutMe.delegate = self;
     
-    self.categories = [NSArray arrayWithObjects:@"Automative", @"Technology", @"Fashion", nil];
+    self.categories = [NSArray arrayWithObjects:@"Automotive", @"Technology", @"Fashion", nil];
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)]];
 }
@@ -129,6 +129,11 @@
         _avatarImage.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[json objectForKey:@"profile_image_url"]]]];
         [self uploadImage:_avatarImage.image];
         _twitterHandle = [json objectForKey:@"screen_name"];
+        
+        // Fake data
+        self.email.text = @"crmpolo@littlegreencar.com";
+        self.blogLink.text = @"www.littlegreencar.com";
+        self.aboutMe.text = @"We provide little green cars";
         
         // save local data to Parse DB
     }else {
@@ -220,19 +225,38 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    
+    NSLog(@"In textFieldShouldReturn");
     [textField resignFirstResponder];
     return YES;
 }
 
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    if (textField == self.category)
+    {
+        NSLog(@"In textFieldShouldBeginEditing, textfield = Category");
+        [self pickCategory:textField];
+        return NO;
+    }
+    else
+    {
+        NSLog(@"In textFieldShouldBeginEditing, textfield != Category");
+        return YES;
+    }
+}
+
+
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
-    
+    NSLog(@"In textFieldDidBeginEditing");
     _avatarImage.userInteractionEnabled = NO;
     [self animateTextField:textField up:YES];
     
 }
 
+
 - (void)textFieldDidEndEditing:(UITextField *)textField{
+    NSLog(@"In textFieldDidEndEditing");
     [self animateTextField:textField up:NO];
     _avatarImage.userInteractionEnabled = YES;
     
@@ -253,7 +277,7 @@
 }
 
 - (IBAction)pickCategory:(id)sender {
-    
+    NSLog(@"In pickCategory");
     [ActionSheetStringPicker showPickerWithTitle:@"Select Category" rows:self.categories initialSelection:self.selectedIndex target:self successAction:@selector(animalWasSelected:element:) cancelAction:@selector(actionPickerCancelled:) origin:sender];
     
 }

@@ -61,7 +61,7 @@
  numberOfRowsInSection:(NSInteger)section
 {
     NSLog(@"In numberOfRowsInSection, for section %d", section);
-    return 2;
+    return 1;
 }
 
 

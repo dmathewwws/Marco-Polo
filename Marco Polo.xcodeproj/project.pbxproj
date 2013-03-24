@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7D2EC316FF9A1600857775 /* NewRibbon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7D2EC216FF9A1600857775 /* NewRibbon.png */; };
 		2AB26FFF16FE34CA00E0E94E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB26FFE16FE34CA00E0E94E /* Parse.framework */; };
 		2AB2700116FE358A00E0E94E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB2700016FE358A00E0E94E /* AudioToolbox.framework */; };
 		2AB2700316FE359700E0E94E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB2700216FE359700E0E94E /* CFNetwork.framework */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A7D2EC216FF9A1600857775 /* NewRibbon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewRibbon.png; sourceTree = "<group>"; };
 		2AB26FFE16FE34CA00E0E94E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		2AB2700016FE358A00E0E94E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2AB2700216FE359700E0E94E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 				2AB2703816FEB5FB00E0E94E /* facebook.png */,
 				2AB2703916FEB5FB00E0E94E /* twitter.png */,
 				2AB2703C16FEB69600E0E94E /* default_profile_image.png */,
+				2A7D2EC216FF9A1600857775 /* NewRibbon.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				2AB2703B16FEB5FB00E0E94E /* twitter.png in Resources */,
 				2AB2703D16FEB69600E0E94E /* default_profile_image.png in Resources */,
 				2AB2703F16FEB8C000E0E94E /* button-red.png in Resources */,
+				2A7D2EC316FF9A1600857775 /* NewRibbon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
