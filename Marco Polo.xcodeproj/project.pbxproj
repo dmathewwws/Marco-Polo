@@ -27,6 +27,8 @@
 		2AB2702616FE52B000E0E94E /* texture-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702516FE52B000E0E94E /* texture-8.png */; };
 		2AB2702816FE586B00E0E94E /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702716FE586B00E0E94E /* face1.png */; };
 		2AB2702A16FE5D2800E0E94E /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702916FE5D2800E0E94E /* face2.png */; };
+		2AB2702D16FE74B000E0E94E /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702B16FE74B000E0E94E /* button-highlighted.png */; };
+		2AB2702E16FE74B000E0E94E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702C16FE74B000E0E94E /* button.png */; };
 		AFAD80C016FE1F68008D2A8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80BF16FE1F68008D2A8A /* UIKit.framework */; };
 		AFAD80C216FE1F68008D2A8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80C116FE1F68008D2A8A /* Foundation.framework */; };
 		AFAD80C416FE1F68008D2A8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80C316FE1F68008D2A8A /* CoreGraphics.framework */; };
@@ -63,6 +65,8 @@
 		2AB2702516FE52B000E0E94E /* texture-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "texture-8.png"; sourceTree = "<group>"; };
 		2AB2702716FE586B00E0E94E /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
 		2AB2702916FE5D2800E0E94E /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
+		2AB2702B16FE74B000E0E94E /* button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-highlighted.png"; sourceTree = "<group>"; };
+		2AB2702C16FE74B000E0E94E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		AFAD80BC16FE1F68008D2A8A /* Marco Polo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marco Polo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAD80BF16FE1F68008D2A8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFAD80C116FE1F68008D2A8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +120,8 @@
 				2AB2702516FE52B000E0E94E /* texture-8.png */,
 				2AB2701C16FE4CA600E0E94E /* bmw-logo.png */,
 				2AB2701E16FE4FB600E0E94E /* mini-logo.png */,
+				2AB2702B16FE74B000E0E94E /* button-highlighted.png */,
+				2AB2702C16FE74B000E0E94E /* button.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 				2AB2702616FE52B000E0E94E /* texture-8.png in Resources */,
 				2AB2702816FE586B00E0E94E /* face1.png in Resources */,
 				2AB2702A16FE5D2800E0E94E /* face2.png in Resources */,
+				2AB2702D16FE74B000E0E94E /* button-highlighted.png in Resources */,
+				2AB2702E16FE74B000E0E94E /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
