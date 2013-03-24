@@ -1476,6 +1476,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateAccount.h"/>
             <relationships>
                 <relationship kind="action" name="authTwitter:"/>
+                <relationship kind="action" name="pickCategory:"/>
                 <relationship kind="action" name="submitButton:"/>
                 <relationship kind="outlet" name="aboutMe" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="avatarImage" candidateClass="UIImageView"/>
@@ -1510,7 +1511,9 @@
         <class className="PostJobController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PostJobController.h"/>
             <relationships>
+                <relationship kind="action" name="pickBlogsPerWeek:"/>
                 <relationship kind="action" name="pickCategory:"/>
+                <relationship kind="action" name="pickDuration:"/>
                 <relationship kind="action" name="submitJob:"/>
                 <relationship kind="outlet" name="blogsPerWeek" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="category" candidateClass="UITextField"/>
