@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4LQ-vM-uli">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4LQ-vM-uli">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -89,22 +89,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Personal Blog Link" minimumFontSize="17" id="o78-VB-fnz">
-                                <rect key="frame" x="25" y="208" width="248" height="30"/>
+                                <rect key="frame" x="25" y="213" width="248" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Category of Interest" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category of Interest" minimumFontSize="17" id="Bfw-0M-fiU">
-                                <rect key="frame" x="25" y="252" width="248" height="30"/>
+                                <rect key="frame" x="25" y="258" width="248" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="About me" id="Uku-Ag-h40">
-                                <rect key="frame" x="25" y="291" width="248" height="63"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="L1x-tJ-5gZ">
                                 <rect key="frame" x="25" y="99" width="66" height="55"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,12 +116,16 @@
                                     <action selector="submitButton:" destination="R5M-JH-e2L" eventType="touchUpInside" id="tIL-2J-joJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="About me" minimumFontSize="17" id="bo6-9w-El5">
+                                <rect key="frame" x="25" y="296" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aLc-Km-enx"/>
                     <connections>
-                        <outlet property="aboutMe" destination="Uku-Ag-h40" id="cXh-gW-yPN"/>
                         <outlet property="avatarImage" destination="L1x-tJ-5gZ" id="Cu8-k1-2rL"/>
                         <outlet property="blogLink" destination="o78-VB-fnz" id="gJL-o0-777"/>
                         <outlet property="category" destination="Bfw-0M-fiU" id="tFW-Ye-vCy"/>
@@ -139,6 +136,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFM-Sv-9En" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-284" y="77"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wvE-3N-C3S">
+            <objects>
+                <viewController id="7jb-6R-T6a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSM-cM-kRf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFx-Mf-f17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136" y="722"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="iDM-5X-Bfo">
@@ -185,7 +196,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Category of Interest" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category of Interest" minimumFontSize="17" id="mn0-d1-A7q">
-                                <rect key="frame" x="36" y="251" width="248" height="30"/>
+                                <rect key="frame" x="36" y="252" width="248" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -203,23 +214,20 @@
                                     <action selector="submitButton:" destination="7XX-Kp-yo7" eventType="touchUpInside" id="IpG-KR-abk"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="About me" id="loc-f9-YtE">
-                                <rect key="frame" x="36" y="290" width="248" height="63"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ed1-Cm-O6O">
                                 <rect key="frame" x="36" y="98" width="66" height="55"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="About Me" minimumFontSize="17" id="9m5-Kc-GMo">
+                                <rect key="frame" x="36" y="295" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hdf-IE-jqd"/>
                     <connections>
-                        <outlet property="aboutMe" destination="loc-f9-YtE" id="lGb-5W-lEa"/>
                         <outlet property="avatarImage" destination="ed1-Cm-O6O" id="LeR-hF-xph"/>
                         <outlet property="blogLink" destination="5wD-tb-4Yq" id="GbW-3a-sYu"/>
                         <outlet property="category" destination="mn0-d1-A7q" id="p4D-fy-U4X"/>
@@ -840,7 +848,7 @@
             <relationships>
                 <relationship kind="action" name="authTwitter:"/>
                 <relationship kind="action" name="submitButton:"/>
-                <relationship kind="outlet" name="aboutMe" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="aboutMe" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="avatarImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="blogLink" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="category" candidateClass="UITextField"/>
@@ -853,7 +861,7 @@
             <relationships>
                 <relationship kind="action" name="authTwitter:"/>
                 <relationship kind="action" name="submitButton:"/>
-                <relationship kind="outlet" name="aboutMe" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="aboutMe" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="avatarImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="blogLink" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="category" candidateClass="UITextField"/>

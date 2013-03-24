@@ -45,6 +45,7 @@
     _email.delegate = self;
     _blogLink.delegate = self;
     _category.delegate = self;
+    _aboutMe.delegate = self;
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)]];
 }
@@ -236,7 +237,7 @@
     
 }
 
--(void)animateTextField:(UITextField*)textField up:(BOOL)up
+-(void)animateTextField:(id)textField up:(BOOL)up
 {
     const int movementDistance = -135; // tweak as needed
     const float movementDuration = 0.3f; // tweak as needed
@@ -249,6 +250,5 @@
     self.view.frame = CGRectOffset(self.view.frame, 0, movement);
     [UIView commitAnimations];
 }
-
 
 @end

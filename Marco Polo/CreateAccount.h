@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 
 
-@interface CreateAccount : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
+@interface CreateAccount : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate, UITextViewDelegate>
 
 - (IBAction)authTwitter:(id)sender;
 - (IBAction)submitButton:(id)sender;
@@ -21,7 +21,7 @@
 @property (strong, nonatomic) NSString *twitterHandle;
 @property (strong, nonatomic) IBOutlet UITextField *blogLink;
 @property (strong, nonatomic) IBOutlet UITextField *category;
-@property (strong, nonatomic) IBOutlet UITextView *aboutMe;
+@property (strong, nonatomic) IBOutlet UITextField *aboutMe;
 @property (strong, nonatomic) UIImagePickerController *picker;
 
 @property (strong, nonatomic) PFFile *userSmallAvatar;
