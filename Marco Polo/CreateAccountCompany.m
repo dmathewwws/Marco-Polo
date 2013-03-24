@@ -45,6 +45,7 @@
     _email.delegate = self;
     _blogLink.delegate = self;
     _category.delegate = self;
+    _aboutMe.delegate = self;
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)]];
 }
