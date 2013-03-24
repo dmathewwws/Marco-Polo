@@ -153,12 +153,7 @@
 		AFAD80C516FE1F68008D2A8A /* Marco Polo */ = {
 			isa = PBXGroup;
 			children = (
-				AFAD80E816FE5399008D2A8A /* UIImage+AlphaAdditions.h */,
-				AFAD80E916FE5399008D2A8A /* UIImage+AlphaAdditions.m */,
-				AFAD80EA16FE5399008D2A8A /* UIImage+ResizeAdditions.h */,
-				AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */,
-				AFAD80EC16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.h */,
-				AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */,
+				AFAD80F416FE7A8C008D2A8A /* UIImage */,
 				AFAD80D716FE1F68008D2A8A /* MainStoryboard.storyboard */,
 				AFAD80CE16FE1F68008D2A8A /* AppDelegate.h */,
 				AFAD80CF16FE1F68008D2A8A /* AppDelegate.m */,
@@ -187,6 +182,19 @@
 				AFAD80D516FE1F68008D2A8A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFAD80F416FE7A8C008D2A8A /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				AFAD80EC16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.h */,
+				AFAD80ED16FE539A008D2A8A /* UIImage+RoundedCornerAdditions.m */,
+				AFAD80E816FE5399008D2A8A /* UIImage+AlphaAdditions.h */,
+				AFAD80E916FE5399008D2A8A /* UIImage+AlphaAdditions.m */,
+				AFAD80EA16FE5399008D2A8A /* UIImage+ResizeAdditions.h */,
+				AFAD80EB16FE5399008D2A8A /* UIImage+ResizeAdditions.m */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
