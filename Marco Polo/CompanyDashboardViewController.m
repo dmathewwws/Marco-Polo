@@ -9,13 +9,17 @@
 
 #import "CompanyDashboardViewController.h"
 #import "Singleton.h"
+#import "ActionSheetStringPicker.h"
 
 
-@interface CompanyDashboardViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CompanyDashboardViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *companyDashboardTableView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipsToolsSegmentedControl;
+@property (weak, nonatomic) IBOutlet UITextField *jobCategoryTextField;
+@property (nonatomic, strong) NSArray *categories;
+@property (nonatomic) NSInteger selectedIndex;
 
 @end
 
@@ -42,6 +46,7 @@
 
     self.companyDashboardTableView.delegate = self;
     self.companyDashboardTableView.dataSource = self;
+    self.jobCategoryTextField.delegate = self;
 
     UIFont *font = [UIFont boldSystemFontOfSize:12.0f];
     NSDictionary *attributes = [NSDictionary dictionaryWithObject:font
@@ -58,6 +63,8 @@
     [self.segmentedControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 22.0f)];
     frame= self.tipsToolsSegmentedControl.frame;
     [self.tipsToolsSegmentedControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 22.0f)];
+
+    self.categories = [NSArray arrayWithObjects:@"Automative", @"Technology", @"Fashion", nil];
 }
 
 
@@ -67,6 +74,7 @@
     
     [self setSegmentedControl:nil];
     [self setTipsToolsSegmentedControl:nil];
+    [self setJobCategoryTextField:nil];
     [super viewDidUnload];
 }
 
@@ -102,6 +110,58 @@
     }
     
     return cell;
+}
+
+
+#pragma mark - UITextFieldDelegate method
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"In textFieldShouldReturn");
+    [textField resignFirstResponder];
+    return NO;
+}
+
+
+#pragma mark - Touch Gestures
+
+- (void)touchesBegan:(NSSet *)touches
+           withEvent:(UIEvent *)event
+{
+    [self.jobCategoryTextField resignFirstResponder];
+}
+
+
+#pragma mark - Picker methods
+
+- (IBAction)pickCategory:(id)sender
+{
+    [ActionSheetStringPicker showPickerWithTitle:@"Select Job Category"
+                                            rows:self.categories
+                                initialSelection:self.selectedIndex
+                                          target:self successAction:@selector(jobCategoryWasSelected:element:)
+                                    cancelAction:@selector(actionPickerCancelled:)
+                                          origin:sender];
+    
+}
+
+
+- (void)jobCategoryWasSelected:(NSNumber *)selectedIndex
+                       element:(id)element
+{
+    self.selectedIndex = [selectedIndex intValue];
+    
+    //may have originated from textField or barButtonItem, use an IBOutlet instead of element
+    self.jobCategoryTextField.text = [self.categories objectAtIndex:self.selectedIndex];
+    [self.jobCategoryTextField resignFirstResponder];
+}
+
+
+#pragma mark - Normal method
+
+- (IBAction)newJobButtonTapped:(id)sender
+{
+    [Singleton sharedInstance].createJobSource = 0;
 }
 
 

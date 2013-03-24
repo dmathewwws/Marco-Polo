@@ -7,8 +7,11 @@
 //
 
 #import "PostJobController.h"
+#import "Singleton.h"
 
 @interface PostJobController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *submitJobButton;
 
 @end
 
@@ -36,6 +39,30 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    NSString *buttonTitle;
+    if ([Singleton sharedInstance].createJobSource == 1)
+    {
+        NSLog(@"Creating job for Catherine");
+        buttonTitle = @"Create job for Catherine";
+    }
+    else
+    {
+        NSLog(@"Creating new job for anyone");
+        buttonTitle = @"Create new job";
+    }
+    [self.submitJobButton setTitle:buttonTitle
+                          forState:UIControlStateNormal];
+    [self.submitJobButton setTitle:buttonTitle
+                          forState:UIControlStateApplication];
+    [self.submitJobButton setTitle:buttonTitle
+                          forState:UIControlStateHighlighted];
+    [self.submitJobButton setTitle:buttonTitle
+                          forState:UIControlStateReserved];
+    [self.submitJobButton setTitle:buttonTitle
+                          forState:UIControlStateSelected];
+    [self.submitJobButton setTitle:buttonTitle
+                          forState:UIControlStateDisabled];
+
     _blogsPerWeek.delegate = self;
     _durationPerWeek.delegate = self;
     _dollarsPerWeek.delegate = self;
@@ -59,14 +86,37 @@
     [self setDurationPerWeek:nil];
     [self setDollarsPerWeek:nil];
     [self setCategory:nil];
+    [self setSubmitJobButton:nil];
     [super viewDidUnload];
 }
 
 #pragma mark -
 #pragma mark TextFields
 
-- (IBAction)submitJob:(id)sender {
+- (IBAction)submitJob:(id)sender
+{
+    NSString *alertMessage;
+    NSString *alertTitle;
+    if ([Singleton sharedInstance].createJobSource == 1)
+    {
+        alertMessage = @"Your job has been created and sent to Catherine.";
+        alertTitle = @"Job Sent";
+    }
+    else
+    {
+        alertMessage = @"Your job has been created and is now available for bloggers to view.";
+        alertTitle = @"Job Created";
+    }
+
+    [[[UIAlertView alloc] initWithTitle:alertTitle
+                                message:alertMessage
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
     
+    [self.navigationController popToViewController:[Singleton sharedInstance].myDashboardViewController
+                                          animated:YES];
+
 }
 
 - (void) dismissKeyboard:(id) sender {

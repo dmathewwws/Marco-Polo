@@ -13,6 +13,7 @@
 @interface Singleton : NSObject
 
 @property (weak, nonatomic) UIViewController *myDashboardViewController;
+@property (nonatomic) int createJobSource;
 
 + (Singleton *)sharedInstance;
 

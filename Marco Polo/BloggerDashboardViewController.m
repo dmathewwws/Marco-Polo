@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *bloggerDashboardTableView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipsToolsSegmentedControl;
+@property (weak, nonatomic) IBOutlet UITextField *jobCategoryTextField;
 
 @end
 
@@ -62,6 +63,7 @@
     [self setBloggerDashboardTableView:nil];
     [self setSegmentedControl:nil];
     [self setTipsToolsSegmentedControl:nil];
+    [self setJobCategoryTextField:nil];
     [super viewDidUnload];
 }
 
@@ -70,6 +72,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - UITextFieldDelegate method
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"In textFieldShouldReturn");
+    [textField resignFirstResponder];
+    return NO;
+}
+
+
+#pragma mark - Touch Gestures
+
+- (void)touchesBegan:(NSSet *)touches
+           withEvent:(UIEvent *)event
+{
+    [self.jobCategoryTextField resignFirstResponder];
 }
 
 

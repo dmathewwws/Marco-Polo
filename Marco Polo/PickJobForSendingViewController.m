@@ -100,6 +100,7 @@
 
 - (IBAction)createNewJobButtonTapped:(id)sender
 {
+    [Singleton sharedInstance].createJobSource = 1;
 }
 
 
