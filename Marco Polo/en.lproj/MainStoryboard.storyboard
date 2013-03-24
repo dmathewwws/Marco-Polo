@@ -237,6 +237,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pickBlogsPerWeek:" destination="7jb-6R-T6a" eventType="editingDidBegin" id="9k7-uv-Idw"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="j7i-Id-egS">
                                 <rect key="frame" x="126" y="108" width="53" height="30"/>
@@ -244,6 +247,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="pickDuration:" destination="7jb-6R-T6a" eventType="editingDidBegin" id="iFT-Vb-73U"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Gd6-Xq-0CM">
                                 <rect key="frame" x="126" y="152" width="53" height="30"/>
@@ -253,7 +259,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="total $0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yol-k7-9K9">
-                                <rect key="frame" x="187" y="156" width="80" height="21"/>
+                                <rect key="frame" x="187" y="156" width="116" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -283,6 +289,7 @@
                         <outlet property="durationPerWeek" destination="j7i-Id-egS" id="zmL-WH-PcF"/>
                         <outlet property="jobDescriptionTextView" destination="B0A-gO-G84" id="8zT-ce-MH2"/>
                         <outlet property="submitJobButton" destination="NFt-Ja-mfu" id="bRm-yM-HOp"/>
+                        <outlet property="totalLabel" destination="Yol-k7-9K9" id="Nh7-i7-45n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFx-Mf-f17" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -889,7 +896,7 @@
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </label>
-                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$27 / blog (Total job $324)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L3H-Lj-z5i">
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$27 / blog (Total job $108)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L3H-Lj-z5i">
                                                             <rect key="frame" x="62" y="25" width="209" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -1021,7 +1028,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$27 / blog (Total job $324)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLd-wO-TOd">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$27 / blog (Total job $108)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLd-wO-TOd">
                                         <rect key="frame" x="10" y="99" width="288" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1063,7 +1070,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total job $324" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ei3-Dr-LQ4">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total job $108" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ei3-Dr-LQ4">
                                         <rect key="frame" x="180" y="304" width="108" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1130,7 +1137,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$27 / blog (Total job $324)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d1I-I3-9we">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$27 / blog (Total job $108)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d1I-I3-9we">
                                                     <rect key="frame" x="62" y="25" width="152" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -1451,6 +1458,9 @@
     <classes>
         <class className="ApplyForJobViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplyForJobViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="confirmButtonTapped:"/>
+            </relationships>
         </class>
         <class className="BloggerDashboardViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BloggerDashboardViewController.h"/>
@@ -1505,6 +1515,8 @@
         <class className="PickJobForSendingViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PickJobForSendingViewController.h"/>
             <relationships>
+                <relationship kind="action" name="createNewJobButtonTapped:"/>
+                <relationship kind="action" name="sendExistingJobButtonTapped:"/>
                 <relationship kind="outlet" name="pickJobForSendingTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
@@ -1521,6 +1533,7 @@
                 <relationship kind="outlet" name="durationPerWeek" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="jobDescriptionTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="submitJobButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="totalLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

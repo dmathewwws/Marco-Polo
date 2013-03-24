@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *submitJobButton;
 @property (weak, nonatomic) IBOutlet UITextView *jobDescriptionTextView;
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 
 @end
 
@@ -100,6 +101,7 @@
     [self setCategory:nil];
     [self setSubmitJobButton:nil];
     [self setJobDescriptionTextView:nil];
+    [self setTotalLabel:nil];
     [super viewDidUnload];
 }
 
@@ -199,31 +201,44 @@
 }
 
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"In textFieldShouldReturn");
     [textField resignFirstResponder];
-    return YES;
-}
-
--(void)textFieldDidBeginEditing:(UITextField *)textField{
-    
-    if(textField != _dollarsPerWeek ){
-        [textField resignFirstResponder];
-    }
-    
-//    [self animateTextField:textField up:YES];
-    
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField{
-//    [self animateTextField:textField up:NO];
-    
-    if(textField == _dollarsPerWeek ){
+/*
+ if(textField == _dollarsPerWeek ){
         NSLog(@"total value is: %d",((self.selectedIndexBlogsPerWeek)+1)*((self.selectedIndexDuration)+1)*[_dollarsPerWeek.text intValue]);
         NSLog(@"self.selectedIndexBlogsPerWeek is: %d",((self.selectedIndexBlogsPerWeek)+1));
         NSLog(@"self.selectedIndexDuration is: %d",((self.selectedIndexDuration)+1));
         NSLog(@"_dollarsPerWeek.text intValue is: %d",[_dollarsPerWeek.text intValue]);
         
+    }
+*/
+    return YES;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSLog(@"In textFieldShouldReturn");
+    if(textField != _dollarsPerWeek ){
+        [textField resignFirstResponder];
+    }
+    
+//    [self animateTextField:textField up:YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSLog(@"In textFieldDidEndEditing");
+//    [self animateTextField:textField up:NO];
+    
+    if(textField == _dollarsPerWeek )
+    {
+        NSLog(@"total value is: %d",((self.selectedIndexBlogsPerWeek)+1)*((self.selectedIndexDuration)+1)*[_dollarsPerWeek.text intValue]);
+        NSLog(@"self.selectedIndexBlogsPerWeek is: %d",((self.selectedIndexBlogsPerWeek)+1));
+        NSLog(@"self.selectedIndexDuration is: %d",((self.selectedIndexDuration)+1));
+        NSLog(@"_dollarsPerWeek.text intValue is: %d",[_dollarsPerWeek.text intValue]);
+        self.totalLabel.text = [NSString stringWithFormat:@"total $%0.2f", ((self.selectedIndexBlogsPerWeek)+1)*((self.selectedIndexDuration)+1)*[_dollarsPerWeek.text floatValue]];
     }
     
 }
