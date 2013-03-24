@@ -20,6 +20,15 @@
 		2AB2701316FE370100E0E94E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB2701216FE370100E0E94E /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2AB2701516FE371100E0E94E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB2701416FE371100E0E94E /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2AB2701716FE371D00E0E94E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB2701616FE371D00E0E94E /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2AB2701A16FE448100E0E94E /* CompanyDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2701916FE448100E0E94E /* CompanyDashboardViewController.m */; };
+		2AB2701D16FE4CA600E0E94E /* bmw-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2701C16FE4CA600E0E94E /* bmw-logo.png */; };
+		2AB2701F16FE4FB600E0E94E /* mini-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2701E16FE4FB600E0E94E /* mini-logo.png */; };
+		2AB2702216FE4FF200E0E94E /* BloggerDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2702116FE4FF200E0E94E /* BloggerDashboardViewController.m */; };
+		2AB2702616FE52B000E0E94E /* texture-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702516FE52B000E0E94E /* texture-8.png */; };
+		2AB2702816FE586B00E0E94E /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702716FE586B00E0E94E /* face1.png */; };
+		2AB2702A16FE5D2800E0E94E /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702916FE5D2800E0E94E /* face2.png */; };
+		2AB2702D16FE74B000E0E94E /* button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702B16FE74B000E0E94E /* button-highlighted.png */; };
+		2AB2702E16FE74B000E0E94E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB2702C16FE74B000E0E94E /* button.png */; };
 		AFAD80C016FE1F68008D2A8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80BF16FE1F68008D2A8A /* UIKit.framework */; };
 		AFAD80C216FE1F68008D2A8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80C116FE1F68008D2A8A /* Foundation.framework */; };
 		AFAD80C416FE1F68008D2A8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAD80C316FE1F68008D2A8A /* CoreGraphics.framework */; };
@@ -53,6 +62,17 @@
 		2AB2701216FE370100E0E94E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2AB2701416FE371100E0E94E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2AB2701616FE371D00E0E94E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		2AB2701816FE448100E0E94E /* CompanyDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDashboardViewController.h; sourceTree = "<group>"; };
+		2AB2701916FE448100E0E94E /* CompanyDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDashboardViewController.m; sourceTree = "<group>"; };
+		2AB2701C16FE4CA600E0E94E /* bmw-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bmw-logo.png"; sourceTree = "<group>"; };
+		2AB2701E16FE4FB600E0E94E /* mini-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-logo.png"; sourceTree = "<group>"; };
+		2AB2702016FE4FF200E0E94E /* BloggerDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloggerDashboardViewController.h; sourceTree = "<group>"; };
+		2AB2702116FE4FF200E0E94E /* BloggerDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloggerDashboardViewController.m; sourceTree = "<group>"; };
+		2AB2702516FE52B000E0E94E /* texture-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "texture-8.png"; sourceTree = "<group>"; };
+		2AB2702716FE586B00E0E94E /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
+		2AB2702916FE5D2800E0E94E /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
+		2AB2702B16FE74B000E0E94E /* button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-highlighted.png"; sourceTree = "<group>"; };
+		2AB2702C16FE74B000E0E94E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		AFAD80BC16FE1F68008D2A8A /* Marco Polo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marco Polo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAD80BF16FE1F68008D2A8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFAD80C116FE1F68008D2A8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +130,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AB2701B16FE4C9700E0E94E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2AB2702716FE586B00E0E94E /* face1.png */,
+				2AB2702916FE5D2800E0E94E /* face2.png */,
+				2AB2702516FE52B000E0E94E /* texture-8.png */,
+				2AB2701C16FE4CA600E0E94E /* bmw-logo.png */,
+				2AB2701E16FE4FB600E0E94E /* mini-logo.png */,
+				2AB2702B16FE74B000E0E94E /* button-highlighted.png */,
+				2AB2702C16FE74B000E0E94E /* button.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		AFAD80B316FE1F68008D2A8A = {
 			isa = PBXGroup;
 			children = (
@@ -157,8 +191,13 @@
 				AFAD80D716FE1F68008D2A8A /* MainStoryboard.storyboard */,
 				AFAD80CE16FE1F68008D2A8A /* AppDelegate.h */,
 				AFAD80CF16FE1F68008D2A8A /* AppDelegate.m */,
+				2AB2701816FE448100E0E94E /* CompanyDashboardViewController.h */,
+				2AB2701916FE448100E0E94E /* CompanyDashboardViewController.m */,
 				AFAD80DA16FE1F68008D2A8A /* InitialViewController.h */,
 				AFAD80DB16FE1F68008D2A8A /* InitialViewController.m */,
+				2AB2702016FE4FF200E0E94E /* BloggerDashboardViewController.h */,
+				2AB2702116FE4FF200E0E94E /* BloggerDashboardViewController.m */,
+				2AB2701B16FE4C9700E0E94E /* Images */,
 				AFAD80E216FE3CBA008D2A8A /* CreateAccount.h */,
 				AFAD80E316FE3CBA008D2A8A /* CreateAccount.m */,
 				AFAD80E516FE3D45008D2A8A /* CreateAccountCompany.h */,
@@ -253,6 +292,13 @@
 				AFAD80D416FE1F68008D2A8A /* Default@2x.png in Resources */,
 				AFAD80D616FE1F68008D2A8A /* Default-568h@2x.png in Resources */,
 				AFAD80D916FE1F68008D2A8A /* MainStoryboard.storyboard in Resources */,
+				2AB2701D16FE4CA600E0E94E /* bmw-logo.png in Resources */,
+				2AB2701F16FE4FB600E0E94E /* mini-logo.png in Resources */,
+				2AB2702616FE52B000E0E94E /* texture-8.png in Resources */,
+				2AB2702816FE586B00E0E94E /* face1.png in Resources */,
+				2AB2702A16FE5D2800E0E94E /* face2.png in Resources */,
+				2AB2702D16FE74B000E0E94E /* button-highlighted.png in Resources */,
+				2AB2702E16FE74B000E0E94E /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +312,8 @@
 				AFAD80CC16FE1F68008D2A8A /* main.m in Sources */,
 				AFAD80D016FE1F68008D2A8A /* AppDelegate.m in Sources */,
 				AFAD80DC16FE1F68008D2A8A /* InitialViewController.m in Sources */,
+				2AB2701A16FE448100E0E94E /* CompanyDashboardViewController.m in Sources */,
+				2AB2702216FE4FF200E0E94E /* BloggerDashboardViewController.m in Sources */,
 				AFAD80E416FE3CBA008D2A8A /* CreateAccount.m in Sources */,
 				AFAD80E716FE3D45008D2A8A /* CreateAccountCompany.m in Sources */,
 				AFAD80EE16FE539A008D2A8A /* UIImage+AlphaAdditions.m in Sources */,
