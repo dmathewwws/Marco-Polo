@@ -1235,6 +1235,80 @@
         <image name="texture-8.png" width="320" height="480"/>
         <image name="twitter.png" width="44" height="44"/>
     </resources>
+    <classes>
+        <class className="ApplyForJobViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ApplyForJobViewController.h"/>
+        </class>
+        <class className="BloggerDashboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BloggerDashboardViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bloggerDashboardTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="jobCategoryTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="tipsToolsSegmentedControl" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="CompanyDashboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyDashboardViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="newJobButtonTapped:"/>
+                <relationship kind="action" name="pickCategory:"/>
+                <relationship kind="outlet" name="companyDashboardTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="jobCategoryTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="tipsToolsSegmentedControl" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="CreateAccount" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateAccount.h"/>
+            <relationships>
+                <relationship kind="action" name="authTwitter:"/>
+                <relationship kind="action" name="pickCategory:"/>
+                <relationship kind="action" name="submitButton:"/>
+                <relationship kind="outlet" name="aboutMe" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="avatarImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="blogLink" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="category" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="CreateAccountCompany" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateAccountCompany.h"/>
+            <relationships>
+                <relationship kind="action" name="authTwitter:"/>
+                <relationship kind="action" name="submitButton:"/>
+                <relationship kind="outlet" name="aboutMe" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="avatarImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="blogLink" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="category" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="InitialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitialViewController.h"/>
+        </class>
+        <class className="PickJobForSendingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickJobForSendingViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pickJobForSendingTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PostJobController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PostJobController.h"/>
+            <relationships>
+                <relationship kind="action" name="pickCategory:"/>
+                <relationship kind="action" name="submitJob:"/>
+                <relationship kind="outlet" name="blogsPerWeek" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="category" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="dollarsPerWeek" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="durationPerWeek" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="jobDescriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="submitJobButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

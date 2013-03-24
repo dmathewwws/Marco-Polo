@@ -25,6 +25,9 @@
 @synthesize aboutMe = _aboutMe;
 @synthesize picker = _picker;
 @synthesize avatarImage = _avatarImage;
+@synthesize stringPicker = _stringPicker;
+@synthesize categories = _categories;
+@synthesize selectedIndex = _selectedIndex;
 
 @synthesize userSmallAvatar = _userSmallAvatar;
 
@@ -46,6 +49,8 @@
     _blogLink.delegate = self;
     _category.delegate = self;
     _aboutMe.delegate = self;
+    
+    self.categories = [NSArray arrayWithObjects:@"Automative", @"Technology", @"Fashion", nil];
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)]];
 }
@@ -83,13 +88,9 @@
                 [alertView show];
             }
             return;
-        } else if (user.isNew) {
+        }  else{
             NSLog(@"User signed up and logged in with Twitter!");
             [self twitterInit:@""];
-        } else {
-            UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Error Twitter account already connected, please use login screen instead"]
-                                                               message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
-            [alertView show];
         }
     }];
 }
@@ -140,7 +141,7 @@
     if (_name.text.length == 0) {
         
     }else{
-
+/*
         PFUser *currentUser = [PFUser currentUser];
         
         // add FB data to Parse db
@@ -159,8 +160,8 @@
                 // Hooray! Let them use the app now.
                 NSLog(@"Horray! User saved in Database");
                 
-                /*TwtCreateAccountViewController *createView = [self.storyboard instantiateViewControllerWithIdentifier:@"TwtCreateAccountViewController"];
-                 [self presentViewController:createView animated:YES completion:nil];*/
+                TwtCreateAccountViewController *createView = [self.storyboard instantiateViewControllerWithIdentifier:@"TwtCreateAccountViewController"];
+                 [self presentViewController:createView animated:YES completion:nil];
                 
             }else {
                 NSString *errorString = [[error userInfo] objectForKey:@"error"];
@@ -177,7 +178,7 @@
             }
         }];
         
-    }
+*/   }
 }
 
 - (BOOL) uploadImage:(UIImage *)anImage{
@@ -249,6 +250,20 @@
     [UIView setAnimationDuration: movementDuration];
     self.view.frame = CGRectOffset(self.view.frame, 0, movement);
     [UIView commitAnimations];
+}
+
+- (IBAction)pickCategory:(id)sender {
+    
+    [ActionSheetStringPicker showPickerWithTitle:@"Select Category" rows:self.categories initialSelection:self.selectedIndex target:self successAction:@selector(animalWasSelected:element:) cancelAction:@selector(actionPickerCancelled:) origin:sender];
+    
+}
+
+- (void)animalWasSelected:(NSNumber *)selectedIndex element:(id)element {
+    self.selectedIndex = [selectedIndex intValue];
+    
+    //may have originated from textField or barButtonItem, use an IBOutlet instead of element
+    self.category.text = [self.categories objectAtIndex:self.selectedIndex];
+    [_category resignFirstResponder];
 }
 
 
