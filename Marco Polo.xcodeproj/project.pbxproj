@@ -197,13 +197,13 @@
 				AFAD80DB16FE1F68008D2A8A /* InitialViewController.m */,
 				2AB2702016FE4FF200E0E94E /* BloggerDashboardViewController.h */,
 				2AB2702116FE4FF200E0E94E /* BloggerDashboardViewController.m */,
-				2AB2701B16FE4C9700E0E94E /* Images */,
 				AFAD80E216FE3CBA008D2A8A /* CreateAccount.h */,
 				AFAD80E316FE3CBA008D2A8A /* CreateAccount.m */,
 				AFAD80E516FE3D45008D2A8A /* CreateAccountCompany.h */,
 				AFAD80E616FE3D45008D2A8A /* CreateAccountCompany.m */,
 				AFAD80F116FE64CB008D2A8A /* MarcoConstants.h */,
 				AFAD80F216FE64CB008D2A8A /* MarcoConstants.m */,
+				2AB2701B16FE4C9700E0E94E /* Images */,
 				AFAD80C616FE1F68008D2A8A /* Supporting Files */,
 			);
 			path = "Marco Polo";
