@@ -97,7 +97,7 @@
     NSLog(@"In numberOfRowsInSection, for section %d", section);
     if (self.selected)
     {
-        return 2;
+        return 5;
     }
     else
     {
